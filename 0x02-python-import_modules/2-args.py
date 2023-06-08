@@ -5,7 +5,7 @@ if __name__ == "__main__":
 
     c_num = len(s.argv) - 1
     if c_num == 0:
-        print("0 argument.")
+        print("0 arguments.")
     elif c_num == 1:
         print("1 argument:")
     else:
