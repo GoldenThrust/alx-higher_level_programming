@@ -17,6 +17,6 @@ def roman_to_int(roman_string):
     val = 0
     for i in range(len(dec_list)):
         val += dec_list[i]
-        if i !+ 0 and dec_list[i - 1] < dec_list[i]:
+        if i != 0 and dec_list[i - 1] < dec_list[i]:
             val -= (decs[i - 1] * 2)
     return val
