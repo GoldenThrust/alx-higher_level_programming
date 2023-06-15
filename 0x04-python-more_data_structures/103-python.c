@@ -24,7 +24,8 @@ void print_python_list(PyObject *p)
 }
 
 /**
- * print_python_bytes - prints some basic information about a Python bytes object
+ * print_python_bytes - prints some basic information
+ * about a Python bytes object
  * @p: pointer to the Python bytes object
  */
 void print_python_bytes(PyObject *p)
@@ -49,6 +50,6 @@ void print_python_bytes(PyObject *p)
 
 	for (i = 0; i < py_size && i < 10; i++)
 		printf(" %02x", (unsigned char)str[i]);
-	
+
 	putchar('\n');
 }
