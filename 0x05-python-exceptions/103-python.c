@@ -12,9 +12,10 @@ void print_python_float(PyObject *p);
  */
 void print_python_list(PyObject *p)
 {
-	Py_ssize_t size = 0, i = 0;
+	Py_ssize_t size = 0;
 	PyObject *item;
-	
+	int i = 0;
+
 	fflush(stdout);
 	printf("[*] Python llist info\n");
 	if (!PyList_CheckExact(p))
@@ -46,8 +47,8 @@ void print_python_list(PyObject *p)
  */
 void print_python_bytes(PyObject *p)
 {
-	py_ssize_t size = 0, i = 0;
-	pyBytesObject *bytes = (PyBytesObject *)p;
+	Py_ssize_t size = 0, i = 0;
+	PyBytesObject *bytes = (PyBytesObject *)p;
 
 	fflush(stdout);
 
