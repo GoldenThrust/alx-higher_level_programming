@@ -1,3 +1,3 @@
 # Python Object Oriented Programming
 
-> :smile:
+> :heart_eye:
