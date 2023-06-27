@@ -1,3 +1,3 @@
 # Python Object Oriented Programming
 
-> :heart_eye:
+> :heart_eyes:
