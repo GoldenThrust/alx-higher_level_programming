@@ -90,7 +90,7 @@ void print_python_float(PyObject *p)
 		return;
 	}
 
-	buffer = PyOS_double_to_string(flobj->ob_fval, 'r', 0,Py_DTSF_ADD_DOT_0, NULL);
+	buf = PyOS_double_to_string(flobj->ob_fval, 'r', 0,Py_DTSF_ADD_DOT_0, NULL);
 	printf("  value: %s\n", buf);
 	PyMem_Free(buf);
 }
