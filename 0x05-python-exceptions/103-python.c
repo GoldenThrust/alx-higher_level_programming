@@ -1,6 +1,10 @@
 #include <stdio.h>
 #include <Python.h>
 
+void print_python_list(PyObject *p);
+void print_python_bytes(PyObject *p);
+void print_python_float(PyObject *p);
+
 /**
  * print_python_list - prints information about a python 
  * list object.
@@ -15,7 +19,7 @@ void print_python_list(PyObject *p)
 	printf("[*] Python llist info\n");
 	if (!PyList_CheckExact(p))
 	{
-		print("  [ERROR] Invalid PyListObject\n");
+		printf("  [ERROR] Invalid PyListObject\n");
 		return;
 	}
 
