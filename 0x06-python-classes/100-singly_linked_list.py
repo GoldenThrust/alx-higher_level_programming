@@ -62,7 +62,7 @@ class SinglyLinkedList:
             node.next_node = new_node
 
     def __str__(self):
-        """ print() representation of a SinglyLinkedList """
+        """ string representation of a SinglyLinkedList """
         values = []
         node = self.__head
         while node is not None:
