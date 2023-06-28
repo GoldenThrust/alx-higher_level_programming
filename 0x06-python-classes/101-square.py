@@ -1,5 +1,4 @@
 #!/usr/bin/python3
-
 """ Class Square """
 
 
@@ -11,7 +10,6 @@ class Square:
         self.size = size
         self.position = position
 
-    
     def area(self):
         """ Return area of square """
         return (self.__size) ** 2
@@ -67,4 +65,3 @@ class Square:
             if i != self.__size - 1:
                 print("")
         return ("")
-

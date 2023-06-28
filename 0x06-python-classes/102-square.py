@@ -13,7 +13,7 @@ class Square:
     def area(self):
         """ Return area of square """
         return (self.__size) ** 2
-    
+
     def __eq__(self, other):
         """equal to comparision to Square """
         return self.area() == other.area()
@@ -53,4 +53,3 @@ class Square:
                 raise ValueError("size must be >= 0")
             else:
                 self.__size = value
-
