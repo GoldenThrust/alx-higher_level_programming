@@ -56,8 +56,8 @@ class Rectangle:
             str = ""
             if self.__width != 0 and self.__height != 0:
                 str += "\n".join(str(self.print_symbol) * self.__width
-                        for j in range(self.__height))
-            return str)
+                                 for j in range(self.__height))
+            return str
 
         def __repr__(self):
             """ string representation of rectangle """
@@ -65,6 +65,7 @@ class Rectangle:
             return "Rectangle({:d}, {:d})".format(self.__width, self.__height)
 
         def __del__(self):
-            """ print a string when a instance of rectangle has been deleted """
+            """ print a string when
+            a instance of rectangle has been deleted """
             print("Bye rectangle...")
             Rectangle.number_of_instances -= 1
