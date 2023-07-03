@@ -6,9 +6,9 @@ class Rectangle:
     """ rectangle interface """
 
     def __init__(self, width=0, height=0):
-        """ initiakized rectangle """
-        self.__height = height
-        self.__width = width
+        """ initialized rectangle """
+        self.height = height
+        self.width = width
 
         @property
         def width(self):
