@@ -1,0 +1,86 @@
+
+         ===========================
+             2-matrix_divided.py
+         ===========================
+
+Prototype  -   matrix_divided(matrix, div);
+divides all elements of a matrix by div.
+
+
+Usage
+=====
+
+::::::::::
+
+ >>> matrix_divided = __import__('2-matrix_divided').matrix_divided
+ >>> matrix = [
+ ...     [2, 4, 6],
+ ...     [8, 10, 12]
+ ... ]
+ >>> print(matrix_divided(matrix, 2))
+ [[1.0, 2.0, 3.0], [4.0, 5.0, 6.0]]
+
+:::::::::::
+
+ >>> matrix = [
+ ...     [2, 4, 6],
+ ...     [8, 10, 12]
+ ... ]
+ >>> print(matrix_divided(matrix, 3))
+ [[0.67, 1.33, 2.0], [2.67, 3.33, 4.0]]
+
+:::::::::::
+
+ >>> matrix = [
+ ...     [-4, -7, 6],
+ ...     [8, 5, 54]
+ ... ]
+ >>> print(matrix_divided(matrix, 5))
+ [[-0.8, -1.4, 1.2], [1.6, 1.0, 10.8]]
+
+:::::::::::
+
+ >>> matrix = None
+ >>> print(matrix_divided(matrix, 5))
+ Traceback (most recent call last):
+ TypeError: matrix must be a matrix (list of lists) of integers/floats
+
+:::::::::::
+
+ >>> matrix = [1, 2, 3]
+ >>> print(matrix_divided(matrix, 2))
+ Traceback (most recent call last):
+ TypeError: matrix must be a matrix (list of lists) of integers/floats
+
+:::::::::::
+
+ >>> matrix = [
+ ...     [1, 2, 3, 4],
+ ...     [1, 2, 3]
+ ... ]
+ >>> print(matrix_divided(matrix, 2))
+ Traceback (most recent call last):
+ TypeError: Each row of the matrix must have the same size
+
+::::::::::::
+
+ >>> matrix = [
+ ...     [1, 2, 3],
+ ...     [1, 2, 3]
+ ... ]
+ >>> print(matrix_divided(matrix, "hhh"))
+ Traceback (most recent call last):
+ TypeError: div must be a number
+
+:::::::::::::
+
+ >>> matrix = [
+ ...     [1, 2, 3],
+ ...     [1, 2, 3]
+ ... ]
+
+ >>> print(matrix_divided(matrix, 0))
+ Traceback (most recent call last):
+ ZeroDivisionError: division by zero
+
+

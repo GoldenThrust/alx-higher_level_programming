@@ -1,0 +1,74 @@
+         ===========================
+                        0-add_integer.py
+         ===========================
+
+Prototype  -   add_integer(a, b=98);
+returns the addition of its two arguments.
+
+
+Usage
+=====
+
+::::::::::
+
+        >>> add_integer = __import__('0-add_integer').add_integer
+        >>> add_integer(10,  3)
+        13
+
+:::::::::
+        
+        >>> add_integer(6, -7)
+        -1
+
+:::::::::
+
+        >>> add_integer(2)
+        100
+
+:::::::::
+
+        >>> add_integer(2.5, 2.4)
+        4
+
+:::::::::
+
+        >>> add_integer(2.0, 0.4)
+        2
+
+:::::::::
+
+        >>> add_integer(None)
+        Traceback (most recent call last):
+        TypeError: a must be an integer
+
+:::::::::
+
+        >>> add_integer(None, 66)
+        Traceback (most recent call last):
+        TypeError: a must be an integer
+
+:::::::::
+
+        >>> add_integer("ttt",  22)
+        Traceback (most recent call last):
+        TypeError: a must be an integer
+
+:::::::::
+
+        >>> add_integer(55, "yyy")
+        Traceback (most recent call last):
+        TypeError: b must be an integer
+
+:::::::::
+
+        >>> add_integer(float('nan'))
+        Traceback (most recent call last):
+        ValueError: cannot convert float NaN to integer
+
+:::::::::
+
+        >>> add_integer(float('nan'))
+        Traceback (most recent call last):
+        ValueError: cannot convert float NaN to integer
+
+
