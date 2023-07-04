@@ -50,16 +50,15 @@ class Rectangle:
             return 0
         return 2 * (self.__width + self.height)
 
-    def __s tr__(self):
+    def __str__(self):
         """ string representation of rectangle """
-
         str = ""
         if self.__width != 0 and self.__height != 0:
             str += "\n".join(str(self.print_symbol) * self.__width
                     for j in range(self.__height))
-            return str
+        return str
     
-    def _repr__(self):
+    def __repr__(self):
         """ string representation of rectangle """
         return "Rectangle({:d}, {:d})".format(self.__width, self.__height)
 
