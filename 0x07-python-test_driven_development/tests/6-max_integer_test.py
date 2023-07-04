@@ -1,10 +1,8 @@
 #!/usr/bin/python3
-"""
-max_integer([..]) Unittest
+"""Unittest for max_integer([..])
 """
 import unittest
 max_integer = __import__('6-max_integer').max_integer
-
 
 class TestMaxInteger(unittest.TestCase):
     """ unittest class for max_integer """
@@ -33,7 +31,7 @@ class TestMaxInteger(unittest.TestCase):
         self.assertEqual(max_integer(t), -1)
 
     def test_non_int_arg(self):
-        """ Tests for a non integer in list"""
+       """ Tests for a non integer in list """
         t = ["gold", 56, 97, 88]
         with self.assertRaises(TypeError):
             max_integer(t)
