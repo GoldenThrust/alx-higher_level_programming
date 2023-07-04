@@ -6,9 +6,9 @@ class Rectangle:
     """ rectangle interface """
 
     def __init__(self, width=0, height=0):
-        """ initiakized rectangle """
-        self.width = width
+        """ initialized rectangle """
         self.height = height
+        self.width = width
 
     @property
     def width(self):
@@ -20,7 +20,7 @@ class Rectangle:
         if not isinstance(value, int):
             raise TypeError("width must be an integer")
         if value < 0:
-            raise TypeError("width must be >= 0")
+            raise ValueError("width must be >= 0")
         self.__width = value
 
     @property
@@ -33,7 +33,7 @@ class Rectangle:
         if not isinstance(value, int):
             raise TypeError("height must be an integer")
         if value < 0:
-            raise TypeError("height must be >= 0")
+            raise ValueError("height must be >= 0")
         self.__height = value
 
     def area(self):
@@ -44,15 +44,15 @@ class Rectangle:
         """ return perimeter of rectangle """
         if self.__width == 0 or self.__height == 0:
             return 0
-        return 2 * (self.__width + self.__height)
+        return 2 * (self.__width + self.height)
 
     def __str__(self):
         """ string representation of rectangle """
-        if self.__width == 0 or self.__height:
+        if self.__width == 0 or self.__height == 0:
             return ""
         rect = []
         for i in range(self.__height):
             [rect.append("#") for j in range(self.__width)]
             if i != self.__height - 1:
                 rect.append("\n")
-        return("".join(rect))
+        return ("".join(rect))
