@@ -1,0 +1,17 @@
+>>> matrix_mul = __import__('100-matrix_mul').matrix_mul
+>>> m_a = [
+... [1, 2],
+... [3, 4],
+... ]
+>>> m_b = m_a
+>>> print(matrix_mul(m_a, m_b))
+[[7, 10], [15, 22]]
+
+
+>>> print(matrix_mul([[]], []))
+Traceback (most recent call last):
+ValueError: m_a can't be empty
+
+>>> print(matrix_mul(None, None))
+Traceback (most recent call last):
+TypeError: m_a must be a list
