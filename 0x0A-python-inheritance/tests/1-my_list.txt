@@ -1,0 +1,6 @@
+>>> m = __import__("1-my_list").MyList
+>>> issubclass(m, list)
+True
+
+>>> m.print_sorted()
+[]
