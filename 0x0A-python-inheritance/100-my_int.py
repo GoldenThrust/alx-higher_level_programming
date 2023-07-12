@@ -18,4 +18,3 @@ class MyInt(int):
         Invert not equal to
         """
         return self.real == value
-
