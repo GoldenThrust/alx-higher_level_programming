@@ -39,7 +39,8 @@ if __name__ == "__main__":
 
             try:
                 if split_line[-2] in valid_codes:
-                    status_codes[split_line[-2]] = status_codes.get(split_line[-2], 0) + 1
+                    status_codes[split_line[-2]] = \
+                            status_codes.get(split_line[-2], 0) + 1
             except IndexError:
                 pass
 
