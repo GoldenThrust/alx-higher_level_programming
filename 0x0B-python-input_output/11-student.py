@@ -15,10 +15,11 @@ class Student:
 
     def to_json(self, attrs=None):
         """
-        retrieves a dictionary representation of a Student instance
+        retrieves a dictionary representation
+        of a Student instance
         """
         if (type(attrs) == list and all(type(attr) == str for attr in attrs)):
-            return {val: getattr(self, val) for val in attrs if hasattr(self, val)}
+            return {v: getattr(self, v) for v in attrs if hasattr(self, v)}
         return self.__dict__
 
     def reload_from_json(self, json):
@@ -27,4 +28,3 @@ class Student:
         """
         for i, j in json.items():
             setattr(self, i, j)
-
