@@ -120,7 +120,7 @@ class Base:
     @staticmethod
     def draw(list_rectangles, list_squares):
         """
-        Draw Rectangles and Squares using the turtle 
+        Draw Rectangles and Squares using the turtle
         """
         screen = turtle.Screen()
         screen.title("Drawing Rectangles and Squares Using turtle")
@@ -158,4 +158,3 @@ class Base:
 
         turtle.done()
         turtle.exitonclick()
-

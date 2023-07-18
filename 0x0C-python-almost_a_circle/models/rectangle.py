@@ -111,7 +111,7 @@ class Rectangle(Base):
             print("")
 
     def update(self, *args, **kwargs):
-        """ 
+        """
         Update the Rectangle
         """
         if args and len(args) != 0:
@@ -162,5 +162,6 @@ class Rectangle(Base):
 
     def __str__(self):
         """ string representation of the Rectangle """
-        return "[Rectangle] ({}) {}/{} - {}/{}".format(self.id, self.x, self.y, self.width, self.height)
-
+        return "[Rectangle] ({}) {}/{} - {}/{}".format(self.id,
+                                                       self.x, self.y,
+                                                       self.width, self.height)
