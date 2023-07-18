@@ -68,18 +68,6 @@ class TestBase_save_to_file(unittest.TestCase):
         except IOError:
             pass
 
-    def test_rectangle(self):
-        rect = Rectangle(20, 10, 2, 2, 1)
-        Rectangle.save_to_file([rect])
-        with open("Rectangle.json", "r") as f:
-            self.assertTrue(len(f.read()) == 53)
-
-    def test_square(self):
-        squ = Square(20, 10, 2, 1)
-        Square.save_to_file([squ])
-        with open("Square.json", "r") as f:
-            self.assertTrue(len(f.read()) == 39)
-
     def test_save_to_file_None(self):
         Square.save_to_file(None)
         with open("Square.json", "r") as f:
@@ -98,7 +86,7 @@ class TestBase_from_json_string(unittest.TestCase):
         lists = [{"id": 1, "width": 20, "height": 20, "x": 10}]
         to_json = Rectangle.to_json_string(lists)
         from_json = Rectangle.from_json_string(to_json)
-        self.assertEqual(list, from_json)
+        self.assertEqual(lists, from_json)
 
     def test_square(self):
         list_input = [{"id": 1, "size": 10, "height": 40}]

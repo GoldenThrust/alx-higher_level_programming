@@ -76,7 +76,7 @@ class Base:
         try:
             with open(filename, "r") as jsonfile:
                 dicts = Base.from_json_string(jsonfile.read())
-                return [cls.create(i) for i in dicts]
+                return [cls.create(**i) for i in dicts]
         except IOError:
             return []
 
