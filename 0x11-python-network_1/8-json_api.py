@@ -5,7 +5,7 @@
     a parameter.
 """
 
-if __name__ == '__name__':
+if __name__ == '__main__':
     import sys
     import requests as r
 
