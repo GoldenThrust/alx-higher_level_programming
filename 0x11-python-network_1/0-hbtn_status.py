@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-''' 
+'''
     Fetches: https://alx-intranet.hbtn.io/status
     and display the type, content and content in utf8 format.
 '''

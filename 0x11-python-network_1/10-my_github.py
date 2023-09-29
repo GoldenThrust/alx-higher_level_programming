@@ -15,4 +15,3 @@ if __name__ == '__main__':
 
     rJson = res.json()
     print(rJson.get("id"))
-

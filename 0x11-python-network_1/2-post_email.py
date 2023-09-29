@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 '''
-    Take in URL and email param and  send POST 
+    Take in URL and email param and  send POST
     req to the URL with the email as param
     display the body of the response(decode: utf8)
 '''
