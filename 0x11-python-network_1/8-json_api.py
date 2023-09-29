@@ -10,7 +10,7 @@ if __name__ == '__main__':
     import requests as r
 
     url = 'http://0.0.0.0:5000/search_user'
-    urlArg = sys.argv[1] if sys.argv[1] else ''
+    urlArg = sys.argv[1] if len(sys.argv) > 1 else ''
 
     pRq = {'q': urlArg}
 
