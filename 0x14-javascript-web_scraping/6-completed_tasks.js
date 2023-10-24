@@ -11,20 +11,16 @@ request(url, function (error, response, body) {
     const tasks = JSON.parse(body);
 
     for (const i in tasks) {
-
       if (tasks[i].completed) {
-
         if (completed[tasks[i].userId]) {
           completed[tasks[i].userId]++;
         } else {
           completed[tasks[i].userId] = 1;
         }
-
       }
-    
     }
     console.log(completed);
   } else {
     console.log('code: ' + response.statusCode);
   }
-})
+});

@@ -12,4 +12,4 @@ request(api, function (error, response, body) {
   } else {
     console.log('code: ' + response.statusCode);
   }
-})
+});
