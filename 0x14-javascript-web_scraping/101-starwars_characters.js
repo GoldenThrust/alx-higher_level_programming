@@ -12,10 +12,9 @@ request(url, async function (error, response, body) {
 
 async function printAllCharacters (characters) {
   for (let i = 0; i < characters.length; i++) {
-    const characterURL = characters[i];
     try {
-      const characterData = await makeRequest(characterURL);
-      console.log(characterData.name);
+      const characterData = await makeRequest(characters[i]);
+      console.log(characterData);
     } catch (error) {
       console.error(error);
     }
